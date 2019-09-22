@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+}
+
+@font-face {
+	font-family: "Sevenet7";
+	src: url("../fonts/3573.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "HelveticaNeue";
+	src: url("../fonts/Helvetica Neue Condensed Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*временная граница для удобности*/
+div.tmpBorder{
+	background-color: #cfcfb0;
+	width: 766px;
+	height: 700px;
+	border: 1px solid black;
+	margin: 190px 577px 190px 577px;
+}
+
+div.leftStickMain{
+	float: left;
+	style: block;
+	width: 8px;
+	height: 167px;
+	margin: 191px 0 0 14px;
+	background-color: #a6a68c;
+}
+
+div.rightStickMain{
+	float: right;
+	style: block;
+	width: 8px;
+	height: 167px;
+	margin: 191px 12px 0 0;
+	background-color: #a6a68c;
+}
+
+/*оранжевый прямоугольник сверху*/
+.orangeTopThing{
+	display: block;
+	width: 207px;
+	height: 9px;
+	margin: 0 0 0 64px;
+}
+
+/*стиль текста для buisness company*/
+.titleText {
+	float: left;
+
+	margin: 25px 0 0 45px;
+	font-size: 30px;
+	font-weight: bolder;
+  	font-family: 'HelveticaNeue', sans-serif;
+  	letter-spacing: -0.05em;
+}
+
+/*стиль текста для short company slogan...*/
+.sloganText {
+	font-size: 8px;
+  	font-family: 'Sevenet7', sans-serif;
+	font-weight: normal;
+  	letter-spacing: 0em;
+  	color: #9c9c8d;
+  	word-spacing: 0.97em;
+  	margin: -4.5px 0 0 0;
+}
+
+/*стиль для ссылок шапки*/
+a.titleText:link, a.titleText:visited, a.titleText:active {
+  color: #323844;
+  text-decoration: none;
+}
+
+/*стиль меню сверху справа*/
+nav {
+	float: right;
+}
+
+.menu{
+	padding: 0;
+	display:block;
+	margin: 52px 47px 0 0;
+	font-size: 8px;
+  	font-family: 'Sevenet7', sans-serif;
+  	text-transform: uppercase;
+}
+
+.menu li {
+	float: left;
+	display: inline-block;
+	margin-right: 16px;
+}
+
+.sticks {
+	border-left:1px solid #9c9c8d;
+	border-right:1px solid #9c9c8d;
+	padding: 0 8px 0 8px;
+}
+
+/*стиль для ссылок меню*/
+.menu li a:link, .menu li a:visited, .menu li a:active{
+    color: #7b7b68;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #ff5800;
+}
+
+/*стиль для меню навигации*/
+nav{
+	float:right;
+}
+
+div.navigator{
+	style: block;
+	width: 722px;
+	height: 40px;
+	border: 1px solid #8e8e79;
+	margin: 93px 0px 0px 22px;
+	background-color: #e2e2d2;
+}
+
+.navigation {
+	padding: 0;
+	display:block;
+	font-size: 14px;
+  	font-family: 'HelveticaNeue', sans-serif;
+  	text-transform: uppercase;
+	background-color: #e2e2d2;
+}
+
+.navigation li {
+	float: left;
+	display: inline-block;
+  	letter-spacing: -0.025em;
+  	margin-top: 12px;
+  	margin-right: 35px;
+}
+
+.navigation li:not(:first-child) {
+	display:inline;
+	border-left: 2px solid #7b7b68;
+	padding-left: 25px;
+	background-color: #e2e2d2;
+}
+
+/*стиль для ссылок меню навигации*/
+.navigation li a:link, .navigation li a:visited, .navigation li a:active{
+    color: #323844;
+	text-decoration: none;
+	background-color: #e2e2d2;
+}
+
+.navigation li a:hover{
+	color: #ff5800;
+}
+
+/*стиль для главной страницы*/
+
+div.mainPage{
+	style: block;
+	position: relative;
+	z-index: 1;
+	width: 722px;
+	height: 450px;
+	border: 1px solid #8e8e79;
+	background-color: #f3f3f3;
+	margin: 10px 0 0 22px;
+}
+
+div.orangeLine {
+	style: block;
+	width: 283px;
+	height: 2px;
+	background-color: #ff5800;
+	margin: 2px 0 0 42px;
+}
+
+div.gradientBoi{
+	style: block;
+	width: 692px;
+	height: 423px;
+	margin: 9px 0 0 14px;
+	background-color: #f3f3f3;
+	background-image: url(../img/awfulgradient.png);
+}
+
+div.arrowBoi{
+	float:right;
+	style: block;
+	width: 10px;
+	height: 7px;
+	margin: 16px 32px 0 0;
+	background-color: transparent;
+	background-image: url(../img/arrowboy.png);
+}
+
+div.bigPic{
+	float: left;
+	style: block;
+	width: 282px;
+	height: 165px;
+	border: 1px solid #8e8e79;
+	margin: 25px 0 0 27px;
+	background-image: url(../img/bigpic.jpg);
+}
+
+.orangeStuff{
+	position: relative;
+	z-index: 3;
+	background-color: transparent;
+}
+
+.shadowStuff{
+	position: relative;
+	z-index: 2;
+	background-color: transparent;
+	margin-left: -16px;
+}
+
+div.topRightBlock{
+	float: right;
+	style: block;
+	width: 334px;
+	height: 163px;
+	background-color:transparent;
+	border-top: 1px solid #8e8e79;
+	border-bottom: 1px solid #8e8e79;
+	margin: 4px 29px 0 0;
+}
+
+.borderBoi{
+	float: right;
+	width: 88px;
+	height: 1px;
+	background-color: #8e8e79;
+}
+
+div.orangeSticksTop{
+	float: left;
+	style: block;
+	width: 6px;
+	height: 18px;
+	background-color: transparent;
+	background-image: url(../img/orangesticks.png);
+	margin: 29px 0 0 17px;
+}
+
+.titleRightTop h1{
+	font-size: 18px;
+  	font-family: 'HelveticaNeue', sans-serif;
+  	text-transform: uppercase;
+  	letter-spacing: -0.025em;
+  	color: #aeaea3;
+  	margin: 27px 0 0 38px;
+}
+
+.titleRightTop strong{
+	color: #ff5800;
+  	background-color: transparent;
+	font-weight: bolder;
+}
+
+p.textTopRight{
+	color: #6c6c6c;
+	font-size: 11px;
+  	font-family: Tahoma, Geneva, sans-serif;
+	margin: 5px 0 0 38px;
+}
+
+a.moreInfo:link, a.moreInfo:visited , a.moreInfo:active{
+	float: left;
+	font-size: 14px;
+  	font-family: 'HelveticaNeue', sans-serif;
+  	color: #c8c8af;
+  	text-transform: uppercase;
+  	margin: 13px 0 0 29px;
+	text-decoration: none;
+}
+
+a.moreInfo:hover{
+	color: #ff5800;
+}
+
+div.bottomLeftBlock{
+	float: left;
+	style: block;
+	width: 284px;
+	height: 183px;
+	border-right: 1px solid #8e8e79;
+	margin: 18px 0 0 27px;
+}
+
+div.orangeSticksBottom{
+	float: left;
+	style: block;
+	width: 6px;
+	height: 18px;
+	background-color: transparent;
+	background-image: url(../img/orangesticks.png);
+	margin: 7px 0 0 1px;
+}
+
+.titleLeftBottom h1{
+	font-size: 18px;
+  	font-family: 'HelveticaNeue', sans-serif;
+  	text-transform: uppercase;
+  	letter-spacing: -0.025em;
+  	color: #aeaea3;
+  	margin: 7px 0 0 22px;
+}
+
+.titleLeftBottom strong{
+	color: #737260;
+	font-weight: bolder;
+}
+
+div.leftWoman{
+	float: left;
+	style:block;
+	margin: 17px 0 0 21px;
+}
+
+.textNearTheLeftWoman p{
+	float: left;
+	style: block;
+	color: #6c6c6c;
+	font-size: 11px;
+  	font-family: Tahoma, Geneva, sans-serif;
+	margin: 17px 0 0 14px;
+}
+
+div.tickets{
+	float: left;
+	style: block;
+	clear: both;
+	margin: 16px 0 0 21px;
+}
+
+.textNearTheTickets{
+	float: left;
+	style: block;
+	color: #6c6c6c;
+	font-size: 11px;
+  	font-family: Tahoma, Geneva, sans-serif;
+	margin: 17px 0 0 14px;
+}
+
+a.moreNews:link, a.moreNews:visited , a.moreNews:active{
+	float: left;
+	font-size: 14px;
+  	font-family: 'HelveticaNeue', sans-serif;
+  	color: #c8c8af;
+  	text-transform: uppercase;
+  	margin: 9px 0 0 -6px;
+	text-decoration: none;
+}
+
+a.moreNews:hover{
+	color: #ff5800;
+}
+
+div.bottomRightBlock{
+	float: right;
+	width: 334px;
+	height: 183px;
+	background-color:transparent;
+	margin: 16px 29px 0 0;
+}
+
+.orangeSticksBottomTwo{
+	float: left;
+	style: block;
+	width: 6px;
+	height: 18px;
+	background-image: url(../img/orangesticks.png);
+	margin: 8px 0 0 18px
+}
+
+.titleRightBottom h1{
+	font-size: 18px;
+  	font-family: 'HelveticaNeue', sans-serif;
+  	text-transform: uppercase;
+  	letter-spacing: -0.025em;
+  	color: #aeaea3;
+  	margin: 8px 0 0 39px;
+}
+
+.titleRightBottom strong{
+	color: #737260;
+	font-weight: bolder;
+}
+
+div.rightWoman{
+	float: left;
+	style:block;
+	margin: 17px 0 0 39px;
+}
+
+.textNearTheRightWoman{
+	float: left;
+	style: block;
+	color: #6c6c6c;
+	font-size: 11px;
+  	font-family: Tahoma, Geneva, sans-serif;
+	margin: 17px 0 0 14px;
+}
+
+div.bottomRightLeft{
+	clear: both;
+	float:left;
+	style:block;
+	width: 140px;
+	height: 57px;
+	margin: 9px 0 0 40px;
+	border-right: 1px solid #8e8e79;
+}
+
+p.left{
+	color: #6c6c6c;
+	font-size: 11px;
+  	font-family: Tahoma, Geneva, sans-serif;
+	margin-top: -3px;
+	line-height: 100%;
+}
+
+.left strong{
+	color: #7b7b68;
+}
+
+div.bottomRightRight{
+	float:right;
+	style:block;
+	width: 143px;
+	height: 57px;
+	margin-top: 8px;
+}
+
+p.right{
+	color: #6c6c6c;
+	font-size: 11px;
+  	font-family: Tahoma, Geneva, sans-serif;
+	margin-top: -3px;
+	margin-left: 10px;
+	line-height: 100%;
+}
+
+.right strong{
+	color: #7b7b68;
+}
+
+a.moreServices:link, a.moreServices:visited , a.moreServices:active{
+	float: right;
+	font-size: 14px;
+  	font-family: 'HelveticaNeue', sans-serif;
+  	color: #c8c8af;
+  	text-transform: uppercase;
+  	margin: 9px 206px 0 0px;
+	text-decoration: none;
+}
+
+a.moreServices:hover{
+	color: #ff5800;
+}
+
+/*стиль для подвала*/
+
+div.footerBoi {
+	style: block;
+	width: 329px;
+	height: 66px;
+	border: 1px solid #8e8e79;
+	background-color: #e2e2d2;
+	margin: -1px 0 0 398px;
+}
+
+p.copyright {
+	position: relative;
+	background-color: #e2e2d2;
+	color: #7b7b68;
+	display:block;
+	font-size: 11px;
+  	font-family: Tahoma, Geneva, sans-serif;
+  	margin: 21px 0 0 27px;
+}
